@@ -1,6 +1,7 @@
 // Copyright 2020-2023 IOTA Stiftung
 // SPDX-License-Identifier: Apache-2.0
 
+use crypto::signatures::ed25519::SECRET_KEY_LENGTH;
 use crypto::signatures::ed25519::SecretKey;
 use identity_verification::jose::jwk::EdCurve;
 use identity_verification::jose::jwk::Jwk;
@@ -25,7 +26,7 @@ pub(crate) fn expand_secret_jwk(jwk: &Jwk) -> KeyStorageResult<SecretKey> {
     );
   }
 
-  let sk: [u8; SecretKey::LENGTH] = params
+  let sk: [u8; SECRET_KEY_LENGTH] = params
     .d
     .as_deref()
     .map(jwu::decode_b64)
@@ -40,10 +41,10 @@ pub(crate) fn expand_secret_jwk(jwk: &Jwk) -> KeyStorageResult<SecretKey> {
     .try_into()
     .map_err(|_| {
       KeyStorageError::new(KeyStorageErrorKind::Unspecified)
-        .with_custom_message(format!("expected key of length {}", SecretKey::LENGTH))
+        .with_custom_message(format!("expected key of length {}", SECRET_KEY_LENGTH))
     })?;
 
-  Ok(SecretKey::from_bytes(&sk))
+  Ok(SecretKey::from_bytes(sk))
 }
 
 #[cfg(any(test, feature = "memstore"))]
