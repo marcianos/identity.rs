@@ -8,7 +8,7 @@ publish = false
 [dependencies]
 anyhow = "1.0.62"
 identity_iota = { path = "../identity_iota", features = ["memstore", "domain-linkage", "stronghold"] }
-iota-sdk = { git = "https://github.com/marcianos/iota-sdk", rev = "0da0643723250072c654ad6c4ed48fed114eea28", default-features = true, features = ["tls", "client", "stronghold"] }
+iota-sdk = { git = "https://github.com/marcianos/iota-sdk", rev = "7665990101a14a3c150c5bf980ec75a188b5c223", default-features = true, features = ["tls", "client", "stronghold"] }
 primitive-types = "0.12.1"
 rand = "0.8.5"
 tokio = { version = "1.29", default-features = false, features = ["rt"] }
