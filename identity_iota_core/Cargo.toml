@@ -23,7 +23,7 @@ iota-sdk = { git = "https://github.com/marcianos/iota-sdk", rev = "d6c5d2e1c6d68
 num-derive = { version = "0.4", default-features = false }
 num-traits = { version = "0.2", default-features = false, features = ["std"] }
 once_cell = { version = "1.17.2", default-features = false, features = ["std"] }
-prefix-hex = { version = "0.7", default-features = false }
+prefix-hex = { version = "0.7.1", default-features = false }
 ref-cast = { version = "1.0.14", default-features = false }
 serde.workspace = true
 strum.workspace = true
