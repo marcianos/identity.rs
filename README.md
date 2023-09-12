@@ -75,7 +75,7 @@ edition = "2021"
 
 [dependencies]
 identity_iota = { version = "1.0-rc" }
-iota-sdk = { git = "https://github.com/marcianos/iota-sdk", rev = "783ca96dc46912b4c433b41bf5544005d5d10141", default-features = true, features = ["tls", "client", "stronghold"] }
+iota-sdk = { git = "https://github.com/marcianos/iota-sdk", rev = "06d14c0e8447ce07110d1b8a5cb7b6219338c41b", default-features = true, features = ["tls", "client", "stronghold"] }
 tokio = { version = "1", features = ["full"] }
 ```
 

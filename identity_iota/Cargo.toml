@@ -23,7 +23,7 @@ identity_verification = { version = "=0.7.0-alpha.7", path = "../identity_verifi
 
 [dev-dependencies]
 anyhow = "1.0.64"
-iota-sdk = { git = "https://github.com/marcianos/iota-sdk", rev = "783ca96dc46912b4c433b41bf5544005d5d10141", default-features = true, features = ["tls", "client", "stronghold"] }
+iota-sdk = { git = "https://github.com/marcianos/iota-sdk", rev = "06d14c0e8447ce07110d1b8a5cb7b6219338c41b", default-features = true, features = ["tls", "client", "stronghold"] }
 rand = "0.8.5"
 tokio = { version = "1.29.0", features = ["full"] }
 
