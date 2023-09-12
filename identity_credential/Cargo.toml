@@ -21,7 +21,7 @@ identity_document = { version = "=0.7.0-alpha.7", path = "../identity_document",
 identity_verification = { version = "=0.7.0-alpha.7", path = "../identity_verification", default-features = false }
 indexmap = { version = "2.0", default-features = false, features = ["std", "serde"] }
 itertools = { version = "0.11", default-features = false, features = ["use_std"], optional = true }
-once_cell = { version = "1.18", default-features = false, features = ["std"] }
+once_cell = { version = "1.17.2", default-features = false, features = ["std"] }
 reqwest = { version = "0.11", default-features = false, features = ["default-tls", "json", "stream"], optional = true }
 roaring = { version = "0.10", default-features = false, optional = true }
 serde.workspace = true

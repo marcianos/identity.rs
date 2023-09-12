@@ -33,7 +33,7 @@ zeroize = { version = "1.6.0", default_features = false, optional = true }
 
 [dev-dependencies]
 identity_credential = { version = "=0.7.0-alpha.7", path = "../identity_credential", features = ["revocation-bitmap"] }
-once_cell = { version = "1.18", default-features = false }
+once_cell = { version = "1.17.2", default-features = false }
 tokio = { version = "1.29.0", default-features = false, features = ["macros", "sync", "rt"] }
 
 [features]
