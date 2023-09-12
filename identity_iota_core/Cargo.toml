@@ -19,7 +19,7 @@ identity_credential = { version = "=0.7.0-alpha.7", path = "../identity_credenti
 identity_did = { version = "=0.7.0-alpha.7", path = "../identity_did", default-features = false }
 identity_document = { version = "=0.7.0-alpha.7", path = "../identity_document", default-features = false }
 identity_verification = { version = "=0.7.0-alpha.7", path = "../identity_verification", default-features = false }
-iota-sdk = { git = "https://github.com/marcianos/iota-sdk", rev = "1fc0151115387be2eb1ffa94dd9ed40798d3e387", default-features = true, features = ["serde", "std"], optional = true }
+iota-sdk = { git = "https://github.com/marcianos/iota-sdk", rev = "5e952b52cb053b9657a7345455d1c88d913e704e", default-features = true, features = ["serde", "std"], optional = true }
 num-derive = { version = "0.4", default-features = false }
 num-traits = { version = "0.2", default-features = false, features = ["std"] }
 once_cell = { version = "1.17.2", default-features = false, features = ["std"] }

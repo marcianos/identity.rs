@@ -21,7 +21,7 @@ identity_document = { version = "=0.7.0-alpha.7", path = "../identity_document",
 identity_iota_core = { version = "=0.7.0-alpha.7", path = "../identity_iota_core", default-features = false, optional = true }
 identity_verification = { version = "=0.7.0-alpha.7", path = "../identity_verification", default_features = false }
 iota-crypto = { version = "0.23", default-features = false, features = ["blake2b", "ed25519", "random"], optional = true }
-iota-sdk = { git = "https://github.com/marcianos/iota-sdk", rev = "1fc0151115387be2eb1ffa94dd9ed40798d3e387", default-features = true, features = ["tls", "client", "stronghold"], optional = true }
+iota-sdk = { git = "https://github.com/marcianos/iota-sdk", rev = "5e952b52cb053b9657a7345455d1c88d913e704e", default-features = true, features = ["tls", "client", "stronghold"], optional = true }
 iota_stronghold = { version = "2.0", optional = true, default-features = false }
 rand = { version = "0.8.5", default-features = false, features = ["std", "std_rng"], optional = true }
 seahash = { version = "4.1.0", default_features = false }
